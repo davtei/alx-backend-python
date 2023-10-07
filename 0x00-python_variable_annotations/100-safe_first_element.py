@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+""" Duck typing an iterable object """
 
 from typing import Sequence, Any, Union
 
