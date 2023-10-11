@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """ Type Checking """
 
-from typing import Tuple, List, Any
+from typing import List, Tuple
 
 
 def zoom_array(lst: Tuple, factor: int = 2) -> List:
     """ Return list """
-    zoomed_in: List[Any] = [
+    zoomed_in: List = [
         item for item in lst
-        for i in range(factor)
+        for i in range(int(factor))
     ]
     return zoomed_in
 
