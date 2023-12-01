@@ -6,13 +6,13 @@ from typing import Dict
 from unittest.mock import MagicMock, Mock, PropertyMock, patch
 
 from client import GithubOrgClient
-from parametized import parametized, parametized_class
+from parameterized import parameterized, parameterized_class
 
 
 class TestGithubOrgClient(unittest.TestCase):
     """A GithubOrgClient test suite"""
 
-    @parametized.expand({
+    @parameterized.expand({
         ("google", {'login': "google"}),
         ("abc", {'login': "abc"}),
     })
