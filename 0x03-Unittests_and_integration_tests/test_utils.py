@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Utils test module"""
 
 import unittest
