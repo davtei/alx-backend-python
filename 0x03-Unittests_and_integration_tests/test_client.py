@@ -12,10 +12,10 @@ from parameterized import parameterized, parameterized_class
 class TestGithubOrgClient(unittest.TestCase):
     """A GithubOrgClient test suite"""
 
-    @parameterized.expand({
+    @parameterized.expand([
         ("google", {'login': "google"}),
         ("abc", {'login': "abc"}),
-    })
+    ])
     @patch(
         "client.get_json",
     )
